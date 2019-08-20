@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/android-adapters-examples.iml" filepath="$PROJECT_DIR$/android-adapters-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tarefa-Android.iml" filepath="$PROJECT_DIR$/Tarefa-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
