@@ -7,20 +7,12 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.senaigo.mobile.vouaprenderandroid.entidades.Pessoa;
-
-/**
- * Created by bruno on 07/04/18.
- */
+import br.com.senaigo.mobile.vouaprenderandroid.entidades.Nota;
 
 public class DefaultAtctivity extends AppCompatActivity {
 
-    public EditText txtNome;
-    public EditText txtEmail;
-    public EditText txtTelefone;
-    public EditText txtSenha;
-    public EditText txtConfirmaSenha;
-    public List<Pessoa> lista = new ArrayList<>();
+    public EditText txtNota;
+    public List<Nota> lista = new ArrayList<>();
     public ListView minhaLista;
 
 }

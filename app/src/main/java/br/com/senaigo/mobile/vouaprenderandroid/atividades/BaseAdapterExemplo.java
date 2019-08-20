@@ -1,13 +1,11 @@
 package br.com.senaigo.mobile.vouaprenderandroid.atividades;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
 import br.com.senaigo.mobile.vouaprenderandroid.R;
-import br.com.senaigo.mobile.vouaprenderandroid.adapters.PessoaAdapter;
-import br.com.senaigo.mobile.vouaprenderandroid.entidades.Pessoa;
+import br.com.senaigo.mobile.vouaprenderandroid.adapters.NotaAdapter;
+import br.com.senaigo.mobile.vouaprenderandroid.entidades.Nota;
 
 public class BaseAdapterExemplo extends DefaultAtctivity {
 
@@ -21,23 +19,13 @@ public class BaseAdapterExemplo extends DefaultAtctivity {
 
         //ENTRADA DE DADOS
         //Captura o componente EditText da VIEW
-        txtNome = findViewById(R.id.txtNome);
-        txtEmail = findViewById(R.id.txtEmail);
-        txtTelefone = findViewById(R.id.txtTelefone);
-        txtSenha = findViewById(R.id.txtTelefone);
-        txtConfirmaSenha = findViewById(R.id.txtConfirmaSenha);
+        txtNota = findViewById(R.id.txtNota);
 
-        String nome, email, telefone, senha, confirmarSenha;
+        String notaString = txtNota.getText().toString();
 
-        nome = txtNome.getText().toString();
-        email = txtEmail.getText().toString();
-        telefone = txtTelefone.getText().toString();
-        senha = txtSenha.getText().toString();
-        confirmarSenha = txtConfirmaSenha.getText().toString();
+        Nota nota = new Nota(notaString);
 
-        Pessoa pessoa = new Pessoa(nome, email, telefone, senha);
-
-        lista.add(pessoa);
+        lista.add(nota);
 
         //SAIDA
 
@@ -48,7 +36,7 @@ public class BaseAdapterExemplo extends DefaultAtctivity {
         minhaLista = findViewById(R.id.minhaLista);
 
 
-        PessoaAdapter pessoaAdapter = new PessoaAdapter(this, lista);
-        minhaLista.setAdapter(pessoaAdapter);
+        NotaAdapter notaAdapter = new NotaAdapter(this, lista);
+        minhaLista.setAdapter(notaAdapter);
     }
 }

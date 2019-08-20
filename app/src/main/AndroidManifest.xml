@@ -15,8 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".atividades.SimpleAdapterExemplo" />
-        <activity android:name=".atividades.ArrayAdapterExemplo" />
         <activity android:name=".atividades.BaseAdapterExemplo"></activity>
     </application>
 

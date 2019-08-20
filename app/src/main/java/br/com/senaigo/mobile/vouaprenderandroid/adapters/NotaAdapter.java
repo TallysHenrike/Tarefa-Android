@@ -10,24 +10,21 @@ import android.widget.TextView;
 import java.util.List;
 
 import br.com.senaigo.mobile.vouaprenderandroid.R;
-import br.com.senaigo.mobile.vouaprenderandroid.entidades.Pessoa;
+import br.com.senaigo.mobile.vouaprenderandroid.entidades.Nota;
 
-/**
- * Created by bruno on 07/04/18.
- */
-
-public class PessoaAdapter extends BaseAdapter {
+public class NotaAdapter extends BaseAdapter {
 
 
     Context context;
-    List<Pessoa> colecao;
+    List<Nota> colecao;
     LayoutInflater inflter;
 
-    public PessoaAdapter(final Context applicationContext,
-                         final List<Pessoa> colecao) {
+    public NotaAdapter(
+        final Context applicationContext,
+        final List<Nota> colecao
+    ) {
         this.context = applicationContext;
         this.colecao = colecao;
-
     }
 
     @Override
@@ -40,7 +37,7 @@ public class PessoaAdapter extends BaseAdapter {
         return this.colecao.get(i);
     }
 
-    private Pessoa parsetItem(int i){
+    private Nota parsetItem(int i){
         return this.colecao.get(i);
     }
 
@@ -57,26 +54,24 @@ public class PessoaAdapter extends BaseAdapter {
         //no método
         if (view == null) {
             view = LayoutInflater.from(context).
-                    inflate(R.layout.item_pessoa,
+                    inflate(R.layout.item_nota,
                             viewGroup, false);
         }
 
         // pega o objeto corrente da lista
-        Pessoa pessoa = parsetItem(i);
+        Nota nota = parsetItem(i);
 
         //Neste ponto vc ira popular os dados do seu layout,
         //utilizando JAVA.
 
-        TextView campoNome, campoEmail;
+        TextView campoNota;
 
         //CASO não queria declarar um campo
-        //((TextView)view.findViewById(R.id.txtItemNome)).setText(pessoa.getNome());
+        //((TextView)view.findViewById(R.id.txtItemNome)).setText(nota.getTexto());
 
-        campoNome = view.findViewById(R.id.txtItemNome);
-        campoEmail = view.findViewById(R.id.txtItemEmail);
+        campoNota = view.findViewById(R.id.txtItemNota);
 
-        campoNome.setText(pessoa.getNome());
-        campoEmail.setText(pessoa.getEmail());
+        campoNota.setText(nota.getTexto());
 
         return view;
     }

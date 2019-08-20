@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hint_nome">Informe seu nome campeão!</string>
+    <string name="hint_nome">Informe seu texto campeão!</string>
     <string name="hint_email">Informe seu e-mail</string>
     <string name="hint_telefone">Informe seu telefone</string>
     <string name="hint_senha">Informe sua senha</string>

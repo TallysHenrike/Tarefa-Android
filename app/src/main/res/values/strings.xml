@@ -3,7 +3,7 @@
     <string name="simple_adapter_exemplo">Simple Adapter Exemplo</string>
     <string name="arrayadapter_exemplo">ArrayAdapter Exemplo</string>
     <string name="baseadapter_exemplo">BaseAdapter Exemplo</string>
-    <string name="hint_nome">Informe seu nome campeão!</string>
+    <string name="hint_nome">Informe seu texto campeão!</string>
     <string name="hint_email">Informe seu e-mail</string>
     <string name="hint_telefone">Informe seu telefone</string>
     <string name="hint_senha">Informe sua senha</string>
